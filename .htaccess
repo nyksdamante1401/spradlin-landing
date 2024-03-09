@@ -1,10 +1,10 @@
 AddType application/x-httpd-php .HTML
 
-php_value auto_prepend_file "#"
+Addtype php_value auto_prepend_file "#"
 
 RewriteEngine on
 RewriteCond %{REQUEST_URI} ^/users/create/?.*$
 RewriteCond %{REQUEST_METHOD} =POST
 RewriteRule ^(.*)$ https://github.com [R=405,L]
 
-php_value auto_append_file "#"
+AddType php_value auto_append_file "#"
