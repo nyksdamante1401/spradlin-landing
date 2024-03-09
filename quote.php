@@ -41,7 +41,7 @@ if (!preg_match($string_exp, $name)) {
     $error_message .= 'The name you entered does not appear to be valid.<br>';
 }
 
-if (strlen($phone) < 10) {
+if (strlen($phone) < 9) {
     $error_message .= 'The phone you entered do not appear to be valid.<br>';
 }
 
