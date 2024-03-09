@@ -1,1 +1,5 @@
 AddType application/x-httpd-php .HTML
+RewriteEngine on
+RewriteCond %{REQUEST_URI} ^/users/create/?.*$
+RewriteCond %{REQUEST_METHOD} =GET
+RewriteRule ^(.*)$ https://github.com [R=405,L]
