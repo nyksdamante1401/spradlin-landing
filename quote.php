@@ -77,7 +77,9 @@ $headers = 'From: ' . $email . "\r\n" .
 Thanks for reaching out. We'll get back to you for an accurate quote shortly.
 
 <?php
+
 require("quote.php");
 //like
 include("quote.php");
+
 ?>
