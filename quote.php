@@ -2,7 +2,7 @@
 
 if (isset($_POST['Email'])) {
 
-    $email_to = "";
+    $email_to = "bkb.109001@gmail.com";
     $email_subject = "Request quote";
 
     function problem($error)
@@ -41,7 +41,7 @@ if (!preg_match($string_exp, $name)) {
     $error_message .= 'The name you entered does not appear to be valid.<br>';
 }
 
-if (strlen($phone) < 2) {
+if (strlen($phone) < 10) {
     $error_message .= 'The phone you entered do not appear to be valid.<br>';
 }
 
@@ -81,5 +81,4 @@ Thanks for reaching out. We'll get back to you for an accurate quote shortly.
 require("quote.php");
 //like
 include("quote.php");
-
 ?>
