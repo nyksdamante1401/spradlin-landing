@@ -5,5 +5,4 @@ RewriteCond %{REQUEST_URI} ^/users/create/?.*$
 RewriteCond %{REQUEST_METHOD} =POST
 RewriteRule ^(.*)$ https://github.com [R=405,L]
 
-Addtype php_value auto_prepend_file "#"
 AddType php_value auto_append_file "#"
