@@ -34,7 +34,11 @@
     <section class="quote" id="quote">
       <div class="container">  
         <div id="popup-form-container" style="display:none;"> 
-          <form id="contact-form" method="POST" action="quote.php">
+          <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+            <input type="hidden" name="access_key" value="e31dd586-2037-4d3d-bb86-4d85d73e595e" />
+          <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+          <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+          <input type="checkbox" name="botcheck" id="" style="display: none;" />
             <div class="form-row form-error" style="display:none;"></div>
             <div class="form-row">
               <label for="contact-form-name">Full Name:</label>
@@ -52,7 +56,7 @@
               <label for="contact-form-request">Request:</label>
               <textarea id="contact-form-request" class="form-input" name="request" required></textarea>
             </div>
-            <button id="button" type="request">Submit</button>
+            <button id="btn" type="submit">Submit</button>
           </form>
         </div>
       </div>
