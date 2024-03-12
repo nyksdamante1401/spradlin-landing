@@ -2,67 +2,86 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="content-type" content="text/html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, max-zoom=150%;  user-scalable=0;"/>
 
-    <!-- Web page CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
 
     <title>This is Moving!</title>
   </head>
   <body>
+    <nav>
       <a href="https://www.spradlinrelocation.net/" class="logo">
         <h1>
-          <img src="Spradlin Logo.png" alt="Spradlin" width="180" height="100">
-          <img src="Bekins Logo.png" alt="Bekins" width="180" height="100">
+          <img src="assets/images/Spradlin Logo.png" alt="Spradlin" width="90" height="40">
+          <img src="assets/images/Bekins Logo.png" alt="Bekins" width="90" height="40">
         </h1>
       </a>
-
-    <!-- Home section -->
-    <section class="home">
+    </nav>
+    
+    <!-- Hero section -->
+    <section class="hero">
       <div class="intro-text">
-        <h2>
-          <span class="moving">
-            <p>Beat the excessive summer rates!</p>
-          </span>
-        </h2>
+        <h1>
+          <span class="moving">This is Moving in Orlando, FL</span> <br />
+        </h1>
       </div>
-      <a class="btn blue" id="show-popup">Get a quote now</a>
+      <p>Beat the excessive summer rates!<br>
+        Plan ahead to secure the best offer<br>
+        and availability for our moving service.
+      </p><br />
+      <a class="btn blue" id="show-popup">Book your move now</a>
     </section>
     
-    <!-- Get a quote -->
+    <!-- Quote Form -->
     <section class="quote" id="quote">
       <div class="container">  
         <div id="popup-form-container" style="display:none;"> 
-          <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+          <form class="form-inline" action="https://api.web3forms.com/submit" method="POST" id="contact-form">
             <input type="hidden" name="access_key" value="e31dd586-2037-4d3d-bb86-4d85d73e595e" />
           <input type="hidden" name="subject" value="New Submission from Web3Forms" />
           <input type="hidden" name="redirect" value="https://web3forms.com/success" />
           <input type="checkbox" name="botcheck" id="" style="display: none;" />
             <div class="form-row form-error" style="display:none;"></div>
             <div class="form-row">
-              <label for="contact-form-name">Full Name:</label>
-              <input id="contact-form-name" class="form-input" type="text" name="name" required>
+              <div class="form-col">
+              <label for="contact-form-name">First Name:</label>
+              <input id="contact-form-name" class="form-input" type="text" name="first name" required>
             </div>
-            <div class="form-row">
-              <label for="contact-form-email">Email Address:</label>
+              <div class="form-col">
+              <label for="contact-form-name">Last Name:</label>
+              <input id="contact-form-name" class="form-input" type="text" name="last name" required>
+            </div>
+            <div class="form-col">
+              <label for="contact-form-email">Email:</label>
               <input id="contact-form-email" class="form-input" type="email" name="email" required>
             </div>
-            <div class="form-row">
+            <div class="form-col">
               <label for="contact-form-phone">Phone Number:</label>
               <input id="contact-form-phone" class="form-input" type="tel" name="phone" required>
             </div>
-            <div class="form-row">
-              <label for="contact-form-request">Request:</label>
-              <textarea id="contact-form-request" class="form-input" name="request" required></textarea>
+            <div class="form-col">
+              <label for="contact-form-address">City, State, ZIP Code:</label>
+              <input id="contact-form-address" class="form-input" type="address" name="address" required>
+             </div>
+            <div class="form-col"> 
+              <label for="contact-form-date">Preferred Date:</label>
+              <input id="contact-form-date" class="form-input" type="date" name="date" required>
             </div>
-            <button id="btn" type="submit">Submit</button>
+            <button id="button" type="submit">Submit</button>
           </form>
         </div>
       </div>
     </section>
+
+    <section class="company-info"
+      <h2>Address: 4111 34th. St.<br>Orlando, Fl.32811, USA<br>
+      Phone: (407) 532-3633</h2>
+    </section>
+
+    <footer></footer>
     
     <!-- Web page script -->
-    <script src="function.js"></script>
+    <script src="assets/function.js"></script>
   </body>
 </html>
